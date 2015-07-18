@@ -1,0 +1,7 @@
+<h1>List of polls</h1>
+
+<ol>
+  <% @polls.each do |poll| %>
+    <li><%= poll.title %></li>
+  <% end %>
+</ol>
