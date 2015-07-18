@@ -1,0 +1,14 @@
+development: &default
+  adapter: postgresql
+  user: user
+  password: password
+  database: voting_app_development
+  encoding: utf8
+  host: localhost
+  min_messages: warning
+  pool: 2
+  timeout: 5000
+
+test:
+  <<: *default
+  database: voting_app_test
